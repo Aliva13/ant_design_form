@@ -1,0 +1,93 @@
+<div class="color">
+  <div class="form">
+    <nz-form [formGroup]="form">
+      <nz-form-item>
+        <nz-form-control>
+          <img class="img1" nz-image width="70%" height="95%"
+          nzSrc="https://www.knowledgelens.com/new-launch/assets/img/kl-logo-new.png"
+          alt="" />
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label>Name</nz-form-label>
+        <nz-form-control>
+          <input nz-input formControlName="name" />
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label>Description</nz-form-label>
+        <nz-form-control>
+          <textarea nz-input formControlName="description"></textarea>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <div class="main">
+          <nz-form-label>Phone Number</nz-form-label>
+          <nz-form-control class="phone-number-control">
+            <div class="parent">
+              <div class="country-code-input">
+                <nz-select formControlName="countryCode">
+                  <nz-option nzLabel="+91" nzValue="+91">INDIA (+91)</nz-option>
+                  <nz-option nzLabel="+44" nzValue="+44">UK (+44)</nz-option>
+                </nz-select>
+              </div>
+              <div class="phone-number-input">
+                <input nz-input formControlName="phoneNumber"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+              </div>
+            </div>
+          </nz-form-control>
+        </div>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label>Birth Date</nz-form-label>
+        <nz-form-control>
+          <nz-date-picker nzFormat="yyyy-MM-dd" formControlName="birthDate"></nz-date-picker>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label>Designation</nz-form-label>
+        <nz-form-control>
+          <nz-radio-group formControlName="designation">
+            <label nz-radio nzValue="developer">Developer</label>
+            <label nz-radio nzValue="designer">Designer</label>
+            <label nz-radio nzValue="manager">Manager</label>
+          </nz-radio-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label>Hobbies</nz-form-label>
+                  <nz-form-control>
+                      <label nz-checkbox formControlName="agree">Reading</label>
+          <label nz-checkbox formControlName="agree">Dancing</label>
+                   </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label color>Technical Skills</nz-form-label>
+        <nz-form-control>
+          <nz-select nzMode="multiple" formControlName="technicalSkills">
+            <nz-option nzLabel="html" nzValue="html">HTML</nz-option>
+            <nz-option nzLabel="css" nzValue="css">CSS</nz-option>
+            <nz-option nzLabel="javascript" nzValue="javascript">JavaScript</nz-option>
+            <nz-option nzLabel="angular" nzValue="angular">Angular</nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control>
+          <button nz-button>Submit</button>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-form>
+  </div>
+  <img class="img2" nz-image width="35%" height="75%"
+    nzSrc="https://o.remove.bg/downloads/2303db2d-2c56-4279-bffc-ad40bb552a60/istockphoto-1305268276-612x612-removebg-preview.png"
+    alt="" />
+</div>

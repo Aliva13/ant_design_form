@@ -1,0 +1,59 @@
+.form {
+  width: 60vh;
+  height: 97vh;
+  margin-left: 156.5vh;
+  margin-top: 6px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 7px 7px rgb(83,121,246);
+}
+nz-form-item {
+  margin-top: 17px;
+  width: 300px;
+}
+nz-select {
+  margin-left: 8px;
+}
+
+button{
+  margin-left: 19vh;
+  border-radius: 5px;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(83,121,246);
+}
+.main{
+  display: flex;
+}
+.parent {
+  display: flex;
+}
+
+.country-code-input {
+  width: 11vh;
+}
+.phone-number-input{
+  width: 20vh;
+}
+.img1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img2{
+  margin-top: 45px;
+  margin-left: 40vh;
+}
+.color{
+  background-color: rgb(153,186,255);
+  height: 100%;
+}
